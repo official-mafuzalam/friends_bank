@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="index.js"></script> -->
+    <title>Friends Bank</title>
+</head>
+
+<body>
+
+    <div id="login-area">
+        <h1 class="text-center">Welcome to Friends Bank</h1>
+        <div class="submit-area">
+            <h4>Login</h4>
+            <input class="form-control" type="text" placeholder="Enter your email">
+            <br>
+            <input class="form-control" type="password" name="" id="" placeholder="Enter your password">
+            <br>
+            <button id="login" class="btn btn-success">Enter</button>
+        </div>
+    </div>
+
+    <div id="transaction-area">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="deposit transaction">
+                    <h5>Deposit</h5>
+                    <h2>200$</h2>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="withdraw transaction">
+                    <h5>Withdraw</h5>
+                    <h2>50$</h2>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="total transaction">
+                    <h5>Total Balence</h5>
+                    <h2>250$</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        const loginBtn = document.getElementById("login");
+        loginBtn.addEventListener("click", function () {
+            var loginArea = document.getElementById("login-area");
+            loginArea.style.display = "none";
+
+            var transactionArea = document.getElementById("transaction-area");
+            transactionArea.style.display = "block";
+        })
+    </script>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
